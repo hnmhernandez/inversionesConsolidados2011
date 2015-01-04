@@ -1,0 +1,59 @@
+@media screen and (min-width: 1024px){
+  #header-large{
+    display:block;
+  }
+
+  #header-short{
+    display:none;
+  }
+
+  #menuRedesSociales{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 564px;
+  }
+
+  #menuRedesSociales li{
+    float:left;
+    margin-left: 30px;
+  }
+
+  #menuRedesSociales li img{
+    width:100%
+  }
+
+  #logo{
+    width:100%
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  #header-large{
+    display:block;
+  }
+
+  #header-short{
+    display:none;
+  }
+
+  #menuRedesSociales li{
+    float:left;
+    margin-left: 5px;
+  }
+
+  #menuRedesSociales li img{
+    width:70%
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  #header-large{
+    display:none;
+  }
+
+  #header-short{
+    display:block;
+  }
+}
