@@ -2,55 +2,42 @@ body{
     overflow-x: hidden;
 }
 
-@media (min-width: 1024px){
+#menuLugares li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#menuLugares li a:hover{
+    color: #cccccc;
+    text-decoration: none;
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1044px) {
     #header-large{
-        display:block;
+        display:none;
     }
 
-    #header-short{
-        display:none;
+    #header-medium{
+        display:block;
     }
 
     #menuRedesSociales{
         list-style: none;
         padding: 0;
-        margin: 0 auto;
-        width: 564px;
-    }
-
-    #menuRedesSociales li{
-        float:left;
-        margin-left: 30px;
-    }
-
-    #menuRedesSociales li img{
-        width:100%
-    }
-
-    #logo{
+        margin: 24px auto;
         width: 100%;
-    }
-    
-    #menuLugares{
-        display: inline-block;
-        list-style: none;
-        padding: 0;
-        margin: 22px auto;
-    }
-    
-    #menuLugares li{
-        float:left;
-        margin-left: 25px;
-    }
-}
-
-@media (max-width: 1023px){
-    #header-large{
-        display:block;
-    }
-
-    #header-short{
-        display:none;
     }
 
     #menuRedesSociales li{
@@ -65,67 +52,72 @@ body{
     #logo{
         width: 100%;
     }
+
+    #menuLugares{
+        clear:both;
+        list-style: none;
+        padding: 0;
+        padding-top: 2em;
+        margin: 33px auto;
+    }
+
+    #menuLugares li{
+        float:left;
+        margin-left: 25px;
+    }
 }
 
-@media (max-width: 767px){
-
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1045px) {
     #header-large{
+        display:block;
+    }
+
+    #header-medium{
         display:none;
     }
 
-    #header-short{
-        display:block;
+    #menuRedesSociales{
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        padding-bottom: 48px;
+    }
+
+    #menuRedesSociales li{
+        float:left;
+        margin-left: 30px;
+    }
+
+    #menuRedesSociales li img{
+        width:100%
     }
 
     #logo{
         width: 100%;
     }
 
-    #menuRedesSociales li{
-        float:left;
-        margin-left: 4px;
-    }
-
-    #menuRedesSociales li img{
-        width:70%
-    }
-
-    #menuRedesSociales{
+    #menuLugares{
+        clear: both;
         list-style: none;
-        margin: 4px auto;
-        width: 564px;
-        display: inline-block;
+        padding: 4px 25px 24px 14px;
+        margin-top: 32px;
+        border-radius: 40px;
+        width: 103%;
+        background-color: #0093DD;
+    }
+
+    #menuLugares li{
+        float:left;
+        margin-left: 25px;
     }
 }
 
-
-@media (max-width: 533px){
-
-    #header-large{
-        display:none;
-    }
-
-    #header-short{
-        display:block;
-    }
-
-    #logo{
-        width: 100%;
-    }
-
-    #menuRedesSociales li{
-        float:left;
-        margin-left: -12px;
-    }
-
-    #menuRedesSociales li img{
-        width:56%
-    }
-
-    #menuRedesSociales{
-        list-style: none;
-        margin: 1px auto;
-        width: 196px;
-        display: inline-block;
-    }
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
 }
