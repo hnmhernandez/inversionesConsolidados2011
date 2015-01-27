@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #menuLugares li a{
@@ -12,13 +13,73 @@ body{
     text-decoration: none;
 }
 
+#header{
+    margin-top: 10px;
+    margin-left: 58px;
+}
+
+#logo{
+    margin-right: 440px;
+}
+
 
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (max-width : 767px) {
+    #header-large{
+        display:none;
+    }
 
+    #header-medium{
+        display:none;
+    }
+
+    #header-small{
+        display:block;
+    }
+
+    #logo{
+        width: 50%;
+    }
+
+    #header{
+        margin-left: 0px;
+    }
+
+    #menuRedesSociales{
+        list-style: none;
+        padding: 0;
+        margin: 3% 5% auto;
+        width: 100%;
+        position: relative;
+    }
+
+    #menuRedesSociales li{
+        float:left;
+        margin-left: 2%;
+        position: relative;
+    }
+
+    #menuRedesSociales li img{
+        width:70%
+    }
+
+    #menuLugares{
+        clear:both;
+        list-style: none;
+        padding: 5px 0 5px 0;
+        margin: 13px 0 0 -90px;
+        background:  #0093DD;
+        position: relative;
+        text-align: center
+    }
+
+    #menuLugares li{
+        margin-left: 5%;
+        display: inline-block;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -33,20 +94,26 @@ and (max-width : 1044px) {
         display:block;
     }
 
+    #header-small{
+        display:none;
+    }
+
     #menuRedesSociales{
         list-style: none;
         padding: 0;
-        margin: 24px auto;
+        margin: 3% 5% auto;
         width: 100%;
+        position: relative;
     }
 
     #menuRedesSociales li{
         float:left;
-        margin-left: 5px;
+        margin-left: 2%;
+        position: relative;
     }
 
     #menuRedesSociales li img{
-        width:70%
+        width:61%
     }
 
     #logo{
@@ -56,14 +123,17 @@ and (max-width : 1044px) {
     #menuLugares{
         clear:both;
         list-style: none;
-        padding: 0;
-        padding-top: 2em;
-        margin: 33px auto;
+        padding: 5px 0 5px 0;
+        margin: 13px 0 0 -101px;
+        background:  #0093DD;
+        position: relative;
+        text-align: center;
+        width: 118%;
     }
 
     #menuLugares li{
-        float:left;
-        margin-left: 25px;
+        margin-left: 5%;
+        display: inline-block;
     }
 }
 
@@ -78,6 +148,10 @@ and (min-width : 1045px) {
         display:none;
     }
 
+    #header-small{
+        display:none;
+    }
+
     #menuRedesSociales{
         list-style: none;
         padding: 0;
@@ -88,15 +162,16 @@ and (min-width : 1045px) {
 
     #menuRedesSociales li{
         float:left;
-        margin-left: 30px;
+        margin-left: 6%;
     }
 
     #menuRedesSociales li img{
-        width:100%
+        width:75%
     }
 
     #logo{
         width: 100%;
+        max-width: 465px;
     }
 
     #menuLugares{
@@ -105,13 +180,13 @@ and (min-width : 1045px) {
         padding: 4px 25px 24px 14px;
         margin-top: 32px;
         border-radius: 40px;
-        width: 103%;
+        width: 163%;
         background-color: #0093DD;
     }
 
     #menuLugares li{
         float:left;
-        margin-left: 25px;
+        margin-left: 2.5%;
     }
 }
 
