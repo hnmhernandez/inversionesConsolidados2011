@@ -13,13 +13,13 @@
     </head>
     <body>
         <div id="wrapper">
-            <div id="header" style="position: absolute;z-index: 1;">
+            <div id="header">
                 <!------------------CABECERA EN MODO PANTALLA GRANDE----------->
                 <div class="row" id="header-large">
                     <div class="col-md-4">	<!--LOGO-->
                         <a href="#"><img id="logo" src="assest/img/logo.png"></a>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8" style="padding-right: 0px;">
                         <ul id="menuRedesSociales">
                             <li><a href="#"><img src="assest/img/icon/mercadolibre.png"></a></li>
                             <li><a href="#"><img src="assest/img/icon/facebook.png"></a></li>
@@ -42,7 +42,7 @@
 
                 <!------------------CABECERA EN MODO PANTALLA MEDIANAS----------->
                 <div id="header-medium">
-                    <div class="row">
+                    <div class="row" style="margin-right: 0px">
                         <div class="col-sm-4">	<!--LOGO-->
                             <a href="#"><img id="logo" src="assest/img/logo.png"></a>
                         </div>
@@ -58,8 +58,8 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-12">
+                    <div class="row" style="margin-right: 0px">
+                        <div class="col-sm-12" style="padding-right: 0px;">
                             <ul id="menuLugares">
                                 <li><a href="#">Inicio</a></li>
                                 <li><a href="#">Nosotros</a></li>
@@ -75,17 +75,12 @@
 
                 <!------------------CABECERA EN MODO PANTALLA PEQUEÑAS----------->
                 <div id="header-small">
-                    <div class="row">
+                    <div class="row" style="margin-right: 0px">
                         <div class="col-sm-12">
                             <a href="#"><img id="logo" src="assest/img/logo.png"></a>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
 
             <!------------------CARRUSEL DE IMAGENES----------->
@@ -129,14 +124,14 @@
                     </div>
 
                     <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<!--                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
-                    </a>
+                    </a>-->
                 </div>
             </div>
             <div id="main">
@@ -147,7 +142,9 @@
                     </div>
                 </div>
             </div>
-            <div id="footer">
+            
+            <div id="footer">            
+                
                 <?= $pie ?>
             </div>
         </div>
