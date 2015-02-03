@@ -1,6 +1,6 @@
 body{
     /*overflow-x: hidden;*/
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 
 #menuLugares li a{
@@ -22,13 +22,29 @@ body{
 
 #footer {
     background: #26186F;
-    height: 4%;
+    height: 38px;
     z-index: 1;
     margin-top: -20px;
 }
 
+#footer div{
+    height: 100%;
+}
 
+#textFooter{
+    color: white;
+}
 
+#linksFooter{
+    background-color: #26186F;
+    padding-right: 0px;
+    text-align: center;
+   margin-bottom: 0px; 
+}
+
+#aFooter{
+    color: white;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
@@ -224,6 +240,26 @@ and (min-width : 1045px) {
         float:left;
         margin-left: 4.48%;
     }
+
+    /*****************FOOTER CSS*********************/
+
+    #menuRedesSocialesFooter{
+        list-style: none;
+        padding: 0;
+        margin: 6px 0 0 0;
+        width: 102%;
+        text-align: end;
+    }
+
+    #menuRedesSocialesFooter li{
+        float:left;
+        margin-left: 3.1%;
+    }
+
+    #menuRedesSocialesFooter li img{
+        width:75%
+    }
+
 }
 
 /* iPhone 4 ----------- */
