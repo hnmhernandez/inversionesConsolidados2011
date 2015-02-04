@@ -39,7 +39,7 @@ body{
     background-color: #26186F;
     padding-right: 0px;
     text-align: center;
-   margin-bottom: 0px; 
+    margin-bottom: 0px; 
 }
 
 #aFooter{
@@ -68,7 +68,7 @@ and (max-width : 767px) {
     }
 
     #logo{
-        width: 50%;
+        width: 75%;
     }
 
     #header{
@@ -107,10 +107,24 @@ and (max-width : 767px) {
         margin-left: 5%;
         display: inline-block;
     }
+    
+    #carruselImagen{
+        display: none
+    }
 
     /*****************FOOTER CSS*********************/
 
+    #footerLarge{
+        display: none;
+    }
 
+    #footerMedium{
+        display: none;
+    }
+    
+    #footerSmall{
+        display: block;
+    }
 
 }
 
@@ -178,6 +192,46 @@ and (max-width : 1044px) {
         margin-left: 5%;
         display: inline-block;
     }
+
+    /*************FOOTER CSS************************/
+
+    #footerLarge{
+        display: none;
+    }
+
+    #footerMedium{
+        display: block;
+    }
+    
+    #footerSmall{
+        display: none;
+    }
+
+    #footer{
+        height: 60px;
+    }
+
+    #footer div{
+        height: 71%;
+    }
+
+    #menuRedesSocialesFooter{
+        list-style: none;
+        padding: 0;
+        margin: 6px 0 0 15%;
+        width: 102%;
+        text-align: end;
+    }
+
+    #menuRedesSocialesFooter li{
+        float:left;
+        margin-left: 3.1%;
+    }
+
+    #menuRedesSocialesFooter li img{
+        width:75%
+    }
+
 }
 
 /* Desktops and laptops ----------- */
@@ -242,6 +296,18 @@ and (min-width : 1045px) {
     }
 
     /*****************FOOTER CSS*********************/
+
+    #footerLarge{
+        display: block;
+    }
+
+    #footerMedium{
+        display: none;
+    }
+    
+    #footerSmall{
+        display: none;
+    }
 
     #menuRedesSocialesFooter{
         list-style: none;

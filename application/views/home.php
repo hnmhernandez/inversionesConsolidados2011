@@ -11,7 +11,15 @@
 
         <title><?= $titulo ?></title>
     </head>
+
     <body>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.carousel').carousel({
+                    pause: "none"
+                });
+            });
+        </script>
         <div id="wrapper">
             <div id="header">
                 <!------------------CABECERA EN MODO PANTALLA GRANDE----------->
@@ -76,7 +84,7 @@
                 <!------------------CABECERA EN MODO PANTALLA PEQUEÑAS----------->
                 <div id="header-small">
                     <div class="row" style="margin-right: 0px">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" style="text-align: center">
                             <a href="#"><img id="logo" src="assest/img/logo.png"></a>
                         </div>
                     </div>
@@ -84,7 +92,7 @@
             </div>
 
             <!------------------CARRUSEL DE IMAGENES----------->
-            <div>
+            <div id="carruselImagen">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <!--                    <ol class="carousel-indicators">
@@ -123,7 +131,7 @@
                         </div>
                     </div>
 
-                    <!-- Controls -->
+                    <!--                     Controls               -->
                     <!--                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
@@ -134,6 +142,7 @@
                                         </a>-->
                 </div>
             </div>
+
             <div id="main">
                 <div id="content">
                     <h2><?= $titulo ?></h2>
@@ -143,32 +152,82 @@
                 </div>
             </div>
 
-            <div id="footer">            
-                <div class="row" style="margin-right: 0px;">
-                    <div class="col-sm-4" style="padding-right: 0px;">
-                        <p id="textFooter" style="line-height: 37px; text-align: center;margin-bottom: 0px;">Copyright &copy; 2014 Inversiones consolidados 2011 C.A</p>
+            <div id="footer">
+
+                <!----------------FOOTER PANTALLA GRANDES------------------->
+
+                <div id="footerLarge">
+                    <div class="row" style="margin-right: 0px;">
+                        <div class="col-sm-4" style="padding-right: 0px;">
+                            <p id="textFooter" style="line-height: 37px; text-align: center;margin-bottom: 0px;">Copyright &copy; 2014 Inversiones consolidados 2011 C.A</p>
+                        </div>
+
+                        <div class="col-sm-5" style="padding-right: 0px;">
+                            <ol id="linksFooter" class="breadcrumb">
+
+                                <li><a id="aFooter" href="#">Nosotros</a></li>
+                                <li><a id="aFooter" href="#">Mobiliario</a></li>
+                                <li><a id="aFooter" href="#">Papeler&iacute;a</a></li>
+                                <li><a id="aFooter" href="#">Computaci&oacute;n</a></li>
+                                <li><a id="aFooter" href="#">Contacto</a></li>
+                            </ol>
+                        </div>
+
+                        <div class="col-sm-3" style="padding-right: 0px">
+                            <ul id="menuRedesSocialesFooter">
+                                <li><a href="#"><img src="assest/img/icon/mercadolibre_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/facebook_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/twitter_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/instagram_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/youtube_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/bbm_footer.png"></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+
+                <!----------------FOOTER PANTALLA MEDIANAS------------------->
+
+                <div id="footerMedium">
+                    <div class="row" style="margin-right: 0px;">
+                        <div class="col-sm-7">
+                            <ol id="linksFooter" class="breadcrumb">
+
+                                <li><a id="aFooter" href="#">Nosotros</a></li>
+                                <li><a id="aFooter" href="#">Mobiliario</a></li>
+                                <li><a id="aFooter" href="#">Papeler&iacute;a</a></li>
+                                <li><a id="aFooter" href="#">Computaci&oacute;n</a></li>
+                                <li><a id="aFooter" href="#">Contacto</a></li>
+                            </ol>
+                        </div>
+
+                        <div class="col-sm-5" style="padding-right: 0px">
+                            <ul id="menuRedesSocialesFooter">
+                                <li><a href="#"><img src="assest/img/icon/mercadolibre_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/facebook_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/twitter_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/instagram_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/youtube_footer.png"></a></li>
+                                <li><a href="#"><img src="assest/img/icon/bbm_footer.png"></a></li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="col-sm-5" style="padding-right: 0px;">
-                        <ol id="linksFooter" class="breadcrumb">
-                            
-                            <li><a id="aFooter" href="#">Nosotros</a></li>
-                            <li><a id="aFooter" href="#">Mobiliario</a></li>
-                            <li><a id="aFooter" href="#">Papeler&iacute;a</a></li>
-                            <li><a id="aFooter" href="#">Computaci&oacute;n</a></li>
-                            <li><a id="aFooter" href="#">Contacto</a></li>
-                        </ol>
+                    <div class="row" style="margin-right: 0px;">
+                        <div class="col-sm-12" style="padding-right: 0px;">
+                            <p id="textFooter" style="line-height: 34px;text-align: center;margin-bottom: 0px;font-size: x-small;margin-left: 22px;">Copyright &copy; 2014 Inversiones consolidados 2011 C.A</p>
+                        </div>
                     </div>
+                    
+                    
 
-                    <div class="col-sm-3" style="padding-right: 0px">
-                        <ul id="menuRedesSocialesFooter">
-                            <li><a href="#"><img src="assest/img/icon/mercadolibre_footer.png"></a></li>
-                            <li><a href="#"><img src="assest/img/icon/facebook_footer.png"></a></li>
-                            <li><a href="#"><img src="assest/img/icon/twitter_footer.png"></a></li>
-                            <li><a href="#"><img src="assest/img/icon/instagram_footer.png"></a></li>
-                            <li><a href="#"><img src="assest/img/icon/youtube_footer.png"></a></li>
-                            <li><a href="#"><img src="assest/img/icon/bbm_footer.png"></a></li>
-                        </ul>
+                </div>
+
+                <!----------------FOOTER PANTALLA PEQUENAS------------------->
+                <div id="footerSmall">
+                    <div class="row" style="margin-right: 0px;">
+                        <div class="col-sm-12"></div>
+
                     </div>
                 </div>
                 <?= $pie ?>
