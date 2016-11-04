@@ -1,0 +1,131 @@
+body{
+    overflow-x: hidden;
+}
+
+@media (min-width: 1024px){
+    #header-large{
+        display:block;
+    }
+
+    #header-short{
+        display:none;
+    }
+
+    #menuRedesSociales{
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 564px;
+    }
+
+    #menuRedesSociales li{
+        float:left;
+        margin-left: 30px;
+    }
+
+    #menuRedesSociales li img{
+        width:100%
+    }
+
+    #logo{
+        width: 100%;
+    }
+    
+    #menuLugares{
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin: 22px auto;
+    }
+    
+    #menuLugares li{
+        float:left;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 1023px){
+    #header-large{
+        display:block;
+    }
+
+    #header-short{
+        display:none;
+    }
+
+    #menuRedesSociales li{
+        float:left;
+        margin-left: 5px;
+    }
+
+    #menuRedesSociales li img{
+        width:70%
+    }
+
+    #logo{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+
+    #header-large{
+        display:none;
+    }
+
+    #header-short{
+        display:block;
+    }
+
+    #logo{
+        width: 100%;
+    }
+
+    #menuRedesSociales li{
+        float:left;
+        margin-left: 4px;
+    }
+
+    #menuRedesSociales li img{
+        width:70%
+    }
+
+    #menuRedesSociales{
+        list-style: none;
+        margin: 4px auto;
+        width: 564px;
+        display: inline-block;
+    }
+}
+
+
+@media (max-width: 533px){
+
+    #header-large{
+        display:none;
+    }
+
+    #header-short{
+        display:block;
+    }
+
+    #logo{
+        width: 100%;
+    }
+
+    #menuRedesSociales li{
+        float:left;
+        margin-left: -12px;
+    }
+
+    #menuRedesSociales li img{
+        width:56%
+    }
+
+    #menuRedesSociales{
+        list-style: none;
+        margin: 1px auto;
+        width: 196px;
+        display: inline-block;
+    }
+}
