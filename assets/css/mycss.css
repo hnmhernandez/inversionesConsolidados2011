@@ -1,6 +1,7 @@
 @font-face {
-    font-family: TwCenMT;
-    src: url(../font/TwCenMT.ttf);
+    font-family: 'TwCenMT';
+	src: url('../font/fontscorecomttwcenmt.eot');
+	src: local('fontscorecomttwcenmt'), url('../font/fontscorecomttwcenmt.woff') format('woff'), url('../font/fontscorecomttwcenmt.ttf') format('truetype');
 }
 
 html, body, a, p, #menu-41 .mbr-brand__name a, a, #menu-41 .mbr-navbar__items a{

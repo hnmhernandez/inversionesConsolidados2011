@@ -165,7 +165,7 @@ function init() {
  * Removes event listeners and other traces left on the page.
  */
 function cleanup() {
-    observer && observer.disconnect();
+    observer.disconnect();
     removeEvent(wheelEvent, wheel);
     removeEvent('mousedown', mousedown);
     removeEvent('keydown', keydown);
